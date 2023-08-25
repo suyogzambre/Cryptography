@@ -1,0 +1,23 @@
+<section class="cover">
+    
+    <div class="container contact-form">
+        <form>
+            <i class="icon-info-sign"></i>
+            <h3></h3>
+            <section class="wrapper">
+	
+				<div class="text">"Random Key Generators"</div>
+				<!-- <div class="input-data"> -->
+					
+					<br>
+					<div class="row">
+						<input type="text" class="form-control" [value]="SecuredKey" #inputTarget>
+						<span (click)="copyText()" class="fa fa-clone"></span>						
+					</div>
+					<br><br><br>
+					<button class="btnContactSubmit" (click)="getKey()">Generate Password</button>
+				
+			</section>        </form>
+    </div>
+    
+    </section>

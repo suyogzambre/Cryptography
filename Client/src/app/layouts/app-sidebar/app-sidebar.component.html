@@ -1,0 +1,112 @@
+<div id="sidebar-collapse">
+    <!-- <div class="admin-block d-flex">
+        <div>
+            <img src="./assets/img/admin-avatar.png" width="45px" />
+        </div>
+        <div class="admin-info">
+            <div class="font-strong">James Brown</div><small>Administrator</small></div>
+    </div> -->
+    <ul class="side-menu metismenu" style="margin: 0;">
+        <li class="logo text-center">
+
+            <!-- <h6 style="color: #023e6f; line-height: 2;"> Bullet Healthcare Services</h6> -->
+        </li>
+        <li>
+            <a routerLinkActive="active" routerLink="/index"><i class="sidebar-item-icon fa fa-th-large"></i>
+                <span class="nav-label">Home</span>
+            </a>
+        </li>
+
+        <!-- *ngIf="userPerm?.includes('MasterSettings')" -->
+        <li routerLinkActive="active">
+            <a href="javascript:;"><i class="sidebar-item-icon fa fa-file-text"></i>
+                <span class="nav-label">Text</span><i class="fa fa-angle-left arrow"></i></a>
+            <ul class="nav-2-level collapse" routerLinkActive="in">
+                <div>
+                    <li>
+                        <a routerLink="/textEnc" routerLinkActive="active"><i
+                                class="sidebar-item-icon fa fa-lock"></i>
+                            <span class="nav-label">Text Encryption</span>
+                        </a>
+
+                    </li>
+                </div>
+            </ul>
+        </li>
+        <li routerLinkActive="active">
+            <a href="javascript:;"><i class="sidebar-item-icon fa fa-picture-o"></i>
+                <span class="nav-label">Image</span><i class="fa fa-angle-left arrow"></i></a>
+            <ul class="nav-2-level collapse" routerLinkActive="in">
+                <div>
+                    <li>
+                        <a routerLink="/imgEnc" routerLinkActive="active"><i
+                                class="sidebar-item-icon fa fa-lock"></i>
+                            <span class="nav-label">Image Encryption</span>
+                        </a>
+                    </li>
+                </div>
+                <div>
+                    <li>
+                        <a routerLink="/imgDcrpt" routerLinkActive="active"><i
+                                class="sidebar-item-icon fa fa-unlock"></i>
+                            <span class="nav-label">Image Decryption</span>
+                        </a>
+                    </li>
+                </div>
+
+            </ul>
+        </li>
+        <li routerLinkActive="active">
+            <a href="javascript:;"><i class="sidebar-item-icon fa fa-file"></i>
+                <span class="nav-label">Documents</span><i class="fa fa-angle-left arrow"></i></a>
+            <ul class="nav-2-level collapse" routerLinkActive="in">
+                <div>
+                    <li>
+                        <a routerLink="/docEnc" routerLinkActive="active"><i class="sidebar-item-icon fa fa-lock"></i>
+                            <span class="nav-label">Documents Encryption</span>
+                        </a>
+                    </li>
+                </div>
+                <div>
+                    <li>
+                        <a routerLink="/docDcrpt" routerLinkActive="active"><i class="sidebar-item-icon fa fa-unlock"></i>
+                            <span class="nav-label">Documents Decryption</span>
+                        </a>
+                    </li>
+                </div>
+
+            </ul>
+        </li>
+        <li>
+            <a routerLink="/gen-key" routerLinkActive="active"><i
+                    class="sidebar-item-icon fa fa-key"></i>
+                <span class="nav-label">Genrate Secure Key</span>
+            </a>
+        </li>
+        <!--
+        <li routerLinkActive="active">
+            <a href="javascript:;"><i class="sidebar-item-icon fa fa-video-camera"></i>
+                <span class="nav-label">Video</span><i class="fa fa-angle-left arrow"></i></a>
+            <ul class="nav-2-level collapse" routerLinkActive="in">
+                <div>
+                    <li>
+                        <a routerLink="#" routerLinkActive="active"><i
+                                class="sidebar-item-icon fa fa-video-camera"></i>
+                            <span class="nav-label">Video Encryption</span>
+                        </a>
+                    </li>
+                </div>
+                <div>
+                    <li>
+                        <a routerLink="#" routerLinkActive="active"><i
+                                class="sidebar-item-icon fa fa-video-camera"></i>
+                            <span class="nav-label">Video Decryption</span>
+                        </a>
+                    </li>
+                </div>
+
+            </ul>
+        </li> -->
+
+    </ul>
+</div>

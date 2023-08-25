@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap');
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../../../assets/img/dashb.gif');
+
+}
+.login-box{
+    background: rgba(214, 208, 208, 0.22);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border: 1px solid rgba(214, 208, 208, 0.3);
+    height: auto;
+    width: 550px;
+}
+.text-login p{
+    color: white;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+.text-login span{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(212, 212, 212);
+}
+.text-login{
+    text-align: center;
+}
+form{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.login-form{
+    margin-top: 0px;
+}
+.form-control{
+    margin-top: 20px;
+    width: 350px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    color: white;
+    height: 40px;
+    border: #00000033 1px solid;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: #a5a5a524;
+}
+.form-control::placeholder{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    color:rgb(196, 196, 196);
+}
+.form-control:focus{
+    outline: none;
+}
+.form-enter{
+    margin-top: 20px;
+    width: 200px;
+    font-weight: bold;
+    height: 45px;
+    border-radius: 10px;
+    background:rgb(255, 255, 255);
+    font-family: 'Quicksand', sans-serif;
+    border: transparent 1px solid;
+}
+.form-control :hover{
+    background-color: gold;
+    color: black;
+
+}
+
+
+
+.signUp{
+color: turquoise;
+text-decoration: underline;
+cursor: pointer;
+}
+.navbar-brand{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-family: 'Satisfy', cursive;
+
+}

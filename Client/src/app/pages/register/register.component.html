@@ -1,0 +1,37 @@
+<div class="main">
+    <span class="navbar-brand">
+        <h1 routerLink="/dashb">Secured World !
+        </h1>
+    </span>
+
+    <div class="login-box">
+        <div class="text-login">
+            <br>
+            <p>SING UP</p>
+            <span>You are just 5 minuts away from securing yourself.</span>
+        </div>
+        <div class="login-form">
+            <form (ngSubmit)="onSubmit()" [formGroup]="loginForm" autocomplete="off">
+                <input class="form-control" formControlName="userId" name="userId" id="userId" type="text"
+                    placeholder="UserID">
+                <input class="form-control" formControlName="mobileNo" name="mobileNo" id="mobileNo" type="number"
+                    minlength="10" maxlength="10" placeholder="Mobile No">
+                <input class="form-control" formControlName="emailId" name="emailId" id="emailId" placeholder="Email Id"
+                    type="email">
+                <input class="form-control" formControlName="password" name="password" id="password" type="password"
+                    placeholder="Password">
+                <input class="form-control" formControlName="rePassword" name="rePassword" id="rePassword" type="password"
+                    placeholder="Confirm Password">
+                <br>
+                <span class="flex" style="color: white;">
+                    <input type="checkbox" formControlName="checkBox" name="checkBox"> I Agree <a style="text-decoration: underline;"> all terms and
+                    conditions.</a></span>
+                <input class="form-enter" type="submit" value="Create New Account">
+                <br>
+                <span class="signUp" routerLink="/login">Already have an Account ?</span>
+
+            </form>
+            <br>
+        </div>
+    </div>
+</div>

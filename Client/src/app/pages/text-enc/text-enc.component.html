@@ -1,0 +1,46 @@
+<section class="cover">
+    
+<div class="container contact-form">
+    <form (ngSubmit)="onSubmit()" [formGroup]="txtEncForm" autocomplete="off">
+        <i class="icon-info-sign"></i>
+        <h3> Drop Message</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <textarea  formControlName="text" name="text" class="form-control" placeholder="Your Message *"
+                        style="width: 100%; height: 150px;"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="text" formControlName="key" name="key" class="form-control" placeholder="Secure Key *" value="" />
+                </div>
+                <br>
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" formControlName="multiSend" name="multiSend" (change) ="onChangeMultiSend($event)">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Do You Want to Send to Multiple Users.
+                    </label>
+            </div>
+            <div class="col-md-6">
+                
+                 <div class="form-group">
+                     <input type="text"  formControlName="userId" name="userId" class="form-control" placeholder="Receiver UserId *" value="" />
+                 </div>
+                <div class="showUserDetails" *ngIf="userDetilsShow == true">
+                    <p>
+                        <b>UserName</b> : {{userDetils?.completeName}}  <br>
+                        <b>Email</b> : {{userDetils?.emailId}}<br>
+                        <b>City</b> : {{userDetils?.city}} <br>
+                        <b>State</b> : {{userDetils?.state}}
+                    </p>  
+                </div>
+                <br>
+                <div class="form-group" *ngIf = "userDetilBtnShow == true">
+                    <input  type="button" class="btnContact" value="Check User Details" (click)="getUserDetails()" />
+                </div>
+                <button type="submit" class="btn btn-danger">Send Message</button>
+            </div>
+
+        </div>
+    </form>
+</div>
+
+</section>

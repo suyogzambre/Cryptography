@@ -1,0 +1,12 @@
+.msg{
+    padding: 10%;
+    background: linear-gradient(45deg,#151680 50%,#261681 50%);
+    height: 100%;
+    margin-top: 5%;
+
+}
+table{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    overflow-y:scroll;
+}

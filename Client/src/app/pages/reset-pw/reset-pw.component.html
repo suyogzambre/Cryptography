@@ -1,0 +1,46 @@
+
+<div class="main">
+    <span class="navbar-brand">
+        <h1 routerLink="/dashb">Secured World !
+      </h1>
+    </span>
+  <div class="login-box">
+      <div class="text-login">
+          <br>
+          <p>Trouble signing in?
+          </p>
+          <span>Resetting your password is easy.<br> Just 
+          Enter the userId and Emil below and follow the instructions.<br> We'll have you up and running in no time.</span>
+      </div>
+      <div class="login-form" *ngIf="showUserIdBox == true">
+          <form (ngSubmit)="onSubmituUserId()" [formGroup]="objForm" autocomplete="off">
+              
+              <input class="form-control" formControlName="userId" name="userId" id="userId"
+                  placeholder="userId"> 
+              <input class="form-enter" type="submit" value="Send OTP">
+              <br>
+              <span class="signUp" routerLink="/register">Create New Account ?</span>
+
+          </form>
+          <br>
+      </div>
+      <div class="login-form" *ngIf="showOtpBox == true">
+
+        <form (ngSubmit)="onSubmitOtp()" [formGroup]="objForm" autocomplete="off">
+              
+          <input class="form-control" formControlName="otp" name="otp" id="otp"
+              placeholder="Enter OTP"> 
+          <input class="form-control" formControlName="password" name="password" id="password"
+              placeholder="Enter password"> 
+          <input class="form-control" formControlName="passwordr" name="passwordr" id="passwordr"
+              placeholder="ReEnter password">
+          <input class="form-enter" type="submit" value="Submit OTP">
+          <br>
+          <span class="btn btn-danger" (click)="onSubmituUserId()">Resend otp</span>
+          <span class="signUp" routerLink="/register">Create New Account ?</span>
+
+      </form>
+      <br>
+      </div>
+  </div>
+</div>

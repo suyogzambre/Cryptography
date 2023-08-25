@@ -1,0 +1,93 @@
+[
+    {
+        "idCaseParamVal": 376,
+        "caseId": 170,
+        "caseParamId": 290,
+        "caseParamName": "Report No.",
+        "caseParamVal": null,
+        "expAnswer1": null,
+        "expAnswer2": null,
+        "expAnswer3": null,
+        "caseParamTemplateKey": "$$rptno$$",
+        "groupParamRefId": null,
+        "subParamName": null
+    },
+    {
+        "idCaseParamVal": 377,
+        "caseId": 170,
+        "caseParamId": 311,
+        "caseParamName": "Other insurance details",
+        "caseParamVal": null,
+        "expAnswer1": null,
+        "expAnswer2": null,
+        "expAnswer3": null,
+        "caseParamTemplateKey": null,
+        "groupParamRefId": 1,
+        "subParamName": "Name of Life Assured"
+    },
+    {
+        "idCaseParamVal": 378,
+        "caseId": 170,
+        "caseParamId": 311,
+        "caseParamName": "Other insurance details",
+        "caseParamVal": null,
+        "expAnswer1": null,
+        "expAnswer2": null,
+        "expAnswer3": null,
+        "caseParamTemplateKey": null,
+        "groupParamRefId": 1,
+        "subParamName": "Name of Company"
+    },
+    {
+        "idCaseParamVal": 379,
+        "caseId": 170,
+        "caseParamId": 311,
+        "caseParamName": "Other insurance details",
+        "caseParamVal": null,
+        "expAnswer1": null,
+        "expAnswer2": null,
+        "expAnswer3": null,
+        "caseParamTemplateKey": null,
+        "groupParamRefId": 1,
+        "subParamName": "Contract/ Proposal number"
+    },
+    {
+        "idCaseParamVal": 380,
+        "caseId": 170,
+        "caseParamId": 311,
+        "caseParamName": "Other insurance details",
+        "caseParamVal": null,
+        "expAnswer1": null,
+        "expAnswer2": null,
+        "expAnswer3": null,
+        "caseParamTemplateKey": null,
+        "groupParamRefId": 1,
+        "subParamName": "Sum assured"
+    },
+    {
+        "idCaseParamVal": 381,
+        "caseId": 170,
+        "caseParamId": 311,
+        "caseParamName": "Other insurance details",
+        "caseParamVal": null,
+        "expAnswer1": null,
+        "expAnswer2": null,
+        "expAnswer3": null,
+        "caseParamTemplateKey": null,
+        "groupParamRefId": 1,
+        "subParamName": "RCD"
+    },
+    {
+        "idCaseParamVal": 382,
+        "caseId": 170,
+        "caseParamId": 311,
+        "caseParamName": "Other insurance details",
+        "caseParamVal": null,
+        "expAnswer1": null,
+        "expAnswer2": null,
+        "expAnswer3": null,
+        "caseParamTemplateKey": null,
+        "groupParamRefId": 1,
+        "subParamName": "Policy status"
+    }
+]

@@ -1,0 +1,27 @@
+<section class="cover">
+    
+<div class="container contact-form">
+    <form (ngSubmit)="onSubmit()" [formGroup]="dcrptMsgForm" autocomplete="off">
+        <i class="icon-info-sign"></i>
+        <h3>* Drop Message *</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input type="text" formControlName="key" name="key" class="form-control" placeholder="Secure Key *"
+                        [value]="SecuredKey" />
+                </div>
+                <button type="submit" class="btn btn-warning">Drcrypt Text</button>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group" *ngIf="showMsg == true">
+                    <Label>Your Message is: </Label>
+                    <textarea formControlName="text" name="text"  class="form-control"
+                        style="width: 100%; height: 150px;"></textarea>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>
+
+</section>

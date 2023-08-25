@@ -1,0 +1,32 @@
+<div class="main">
+    <span class="navbar-brand">
+        <h1 routerLink="/dashb">Secured World !
+        </h1>
+    </span>
+
+
+    <div class="login-box">
+        <div class="text-login">
+            <br>
+            <p>Login</p>
+            <span>Use your credentials to log in.</span>
+        </div>
+        <div class="login-form">
+            <form (ngSubmit)="onLogin()" [formGroup]="loginForm" autocomplete="off">
+                <input class="form-control" formControlName="username" name="username" id="username"
+                    placeholder="UserId">
+                <input class="form-control" formControlName="password" name="password" id="password" type="password"
+                    placeholder="Password">
+                <input class="form-enter" type="submit" value="Login">
+                <br>
+                <div class="flex">
+                    <span class="signUp" routerLink="/register">Create New Account
+                        ?</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="signUp" routerLink="/resetPw">Forgot Password?</span>
+                </div>
+
+            </form>
+            <br>
+        </div>
+    </div>
+</div>
